@@ -1,0 +1,32 @@
+<nav class="navbar navbar-dark fixed-top" style="background-color:orangered">
+  <div class="container-fluid">
+<button class="sidebar-open btnsidebar" (click)="sidebarShow = !sidebarShow">Menú</button>
+<a class="navbar-brand" href="#">Centro para la Industria<br>
+                                de la Comunicación<br>
+                                Gráfica</a>
+<div class="sidebar-slider" [class.sidebar-slide-in]="sidebarShow">
+  <button class="sidebar-close" (click)="sidebarShow = !sidebarShow">x</button>
+  <div class="sidebar-content">
+      <h2 class="set-align"></h2>
+      <div class="set-sidebar-text">Perfil</div>
+      <div id="set-sidebar-text">Crear</div>
+      <ul>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Administrador</a></li>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Instructor</a></li>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Programa</a></li>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Ficha</a></li>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Empresa</a></li>
+      </ul>
+      <div id="set-sidebar-item" >Consultar</div>
+      <ul>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Administrador</a></li>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Instructor</a></li>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Programa</a></li>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Ficha</a></li>
+        <li><a class="set-sidebar-item" href="#" target="_blank">Empresa</a></li>
+      </ul>
+  </div>
+</div>
+</div>
+</nav>
+

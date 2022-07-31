@@ -1,0 +1,96 @@
+* {
+  font-family: 'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+
+
+.sidebar-open{
+  background-color:orangered;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.set-sidebar-item {
+  border: none;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+}
+.btnsidebar{
+  background-color:orangered;
+  color: white;
+  border: 1px solid orangered;
+  border-radius: 10px;
+}
+.btnsidebar:hover{
+  box-shadow: 2px 2px 5px gray;
+}
+.sidebar-slider {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background-color: orangered;
+  transform: translateX(-100%);
+  transition: ease-in-out 300ms transform;
+  width: 230px;
+}
+.sidebar-slider.sidebar-slide-in {
+  transform: translateX(0%);
+  transition: ease-in-out 600ms transform;
+}
+.sidebar-close {
+  position: fixed;
+  top: 0;
+  right: 0;
+  color: orangered;
+  cursor: pointer;
+  background-color: white;
+  border: none;
+  margin: 7px;
+  border-radius: 3px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 21px;
+  font-weight: 400;
+}
+.sidebar-content {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-size: 16px;
+  padding: 10px;
+  height: 100%;
+  margin-top:66px;
+  position:relative;
+}
+.set-align{
+  text-align: center;
+}
+.set-sidebar-text,
+.set-sidebar-item,
+.set-sidebar-menu
+{
+  padding: 11px;
+}
+
+.set-sidebar-text:hover,
+.set-sidebar-item:hover
+{
+  background-image: linear-gradient(to right, gray,orangered);
+  color: black;
+  border-left: 10px solid orangered;
+  cursor: pointer;
+}
+
+
