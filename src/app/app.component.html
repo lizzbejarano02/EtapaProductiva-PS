@@ -1,4 +1,13 @@
-<app-nav></app-nav>
 <router-outlet></router-outlet>
+<header class="p-2 text-white bg-warning">
+    <div class="row  w-100 h-auto">
+        <button class="ms-3 text-white w-auto h-auto btn " (click)="setValue()">menu </button>
+        <i></i>
+    </div>
+</header>
+<div *ngIf="value">
+    <app-nav></app-nav>
+</div>
+
 
 
